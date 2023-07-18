@@ -1,0 +1,10 @@
+.homeTitle {
+  font-size: 50px;
+  font-weight: 700;
+}
+.homeWrapper {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+}

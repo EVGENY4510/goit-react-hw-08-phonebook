@@ -7,9 +7,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/paper-g04f46ebc5_1920.jpg);
+  background-size: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0px;
+}
+button {
+  cursor: pointer;
 }

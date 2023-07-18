@@ -1,0 +1,23 @@
+.NavLink,
+.NavLinkContact,
+.NavLinkRegister {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+.NavLinkContact {
+  margin-right: 8px;
+}
+.NavLinkRegister {
+  margin-right: 40px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.isLogin {
+  display: flex;
+  align-items: center;
+}

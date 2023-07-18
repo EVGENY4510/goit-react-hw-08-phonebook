@@ -1,0 +1,7 @@
+.titleContact {
+  position: absolute;
+  left: 50%;
+  top: 180px;
+  transform: translateX(-50%);
+  font-size: 30px;
+}

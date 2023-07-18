@@ -1,0 +1,83 @@
+/* .form {
+  width: 320px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+} */
+.form {
+  width: 320px;
+  position: fixed;
+  top: 230px;
+  left: 950px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.loginInput {
+  height: 30px;
+  font-size: 20px;
+}
+.loginButton {
+  height: 35px;
+  width: 90px;
+  border-style: none;
+  border-radius: 4px;
+  background-color: rgb(139, 139, 139);
+  font-size: 16px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.loginButton:hover {
+  box-shadow: 4px 4px 5px 0px rgba(158, 158, 158, 1);
+}
+
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+.loginButton {
+  overflow: hidden;
+  position: relative;
+}
+
+.loginButton:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 200px;
+  margin-left: 60px;
+  background: #fff;
+  opacity: 0.5;
+  position: absolute;
+  left: -40px;
+  top: -100px;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: all 0.1s;
+  animation-name: slideme;
+  animation-duration: 3s;
+  animation-delay: 0.05s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
