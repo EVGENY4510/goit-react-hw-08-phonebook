@@ -11,18 +11,18 @@ export default function SharedLayout() {
     <div>
       <div className={css.nav}>
         <NavLink
-          className={css.NavLink}
+          className={({ isActive }) => `${isActive ? css.active : css.NavLink}`}
           to={'/'}
-          style={({ isActive }) => ({ color: isActive ? 'aqua' : 'black' })}
         >
           Home
         </NavLink>
         {isLoggedIn ? (
           <div className={css.isLogin}>
             <NavLink
-              className={css.NavLinkContact}
+              className={({ isActive }) =>
+                `${isActive ? css.activeNavLinkContact : css.NavLinkContact}`
+              }
               to={'/contacts'}
-              style={({ isActive }) => ({ color: isActive ? 'aqua' : 'black' })}
             >
               Contacts
             </NavLink>
@@ -31,16 +31,18 @@ export default function SharedLayout() {
         ) : (
           <div>
             <NavLink
-              className={css.NavLinkRegister}
+              className={({ isActive }) =>
+                `${isActive ? css.activeNavLinkRegister : css.NavLinkRegister}`
+              }
               to={'/register'}
-              style={({ isActive }) => ({ color: isActive ? 'aqua' : 'black' })}
             >
               Register
             </NavLink>
             <NavLink
-              className={css.NavLink}
+              className={({ isActive }) =>
+                `${isActive ? css.active : css.NavLink}`
+              }
               to={'/login'}
-              style={({ isActive }) => ({ color: isActive ? 'aqua' : 'black' })}
             >
               Login
             </NavLink>
